@@ -1,4 +1,4 @@
-# Studi Kasus HTML 1 — Website Profil SMAK Frateran Surabaya
+# Studi Kasus HTML 1 - Website Profil SMAK Frateran Surabaya
 
 Website profil sekolah sederhana yang terdiri dari 3 halaman yang saling terhubung.
 
