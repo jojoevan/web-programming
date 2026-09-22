@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 40px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* Navigasi */
+nav {
+  background-color: #172554;
+  padding: 0 40px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.aktif {
+  background-color: #3b82f6;
+}
+
+/* Konten */
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px 28px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #1e3a8a;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.catatan {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+form button {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3b82f6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #172554;
+  color: white;
+}
