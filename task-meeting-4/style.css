@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #1e3a8a;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 40px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 0;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #172554;
+  padding: 0 40px;
+}
+
+nav a {
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.aktif {
+  background-color: #3b82f6;
+}
+
+.hero {
+  padding: 80px 40px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(23, 37, 84, 0.75), rgba(23, 37, 84, 0.75)), url("images/sekolah.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  margin: 0 0 8px;
+  font-size: 36px;
+  color: white;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  font-size: 18px;
+}
+
+.judul-halaman {
+  padding: 32px 40px;
+  text-align: center;
+  color: white;
+  background-color: #1e3a8a;
+}
+
+.judul-halaman h2 {
+  margin: 0;
+  font-size: 30px;
+  color: white;
+}
+
+.judul-halaman p {
+  margin: 4px 0 0;
+}
+
+.tombol {
+  display: inline-block;
+  padding: 10px 24px;
+  margin: 4px;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.tombol:hover {
+  background-color: #1e3a8a;
+}
+
+.tombol-garis {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px 28px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #1e3a8a;
+}
+
+h3 {
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.grid-2,
+.grid-3,
+.grid-4 {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.kartu {
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-top: 4px solid #3b82f6;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+.kartu h3 {
+  margin-top: 0;
+}
+
+.kartu p {
+  margin: 0;
+}
+
+.huruf {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background-color: #1e3a8a;
+  border-radius: 50%;
+}
+
+.sambutan {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.sambutan img {
+  width: 220px;
+  border-radius: 6px;
+}
+
+figure {
+  margin: 0;
+  background-color: #f9fafb;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.mitra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.mitra li {
+  padding: 8px 16px;
+  background-color: #e8f0fe;
+  color: #1e3a8a;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.tabel-kiri td {
+  text-align: left;
+}
+
+.tabel-kiri td:first-child {
+  width: 90px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.baris-total td {
+  font-weight: bold;
+  background-color: #e8f0fe;
+}
+
+.tabel-scroll {
+  overflow-x: auto;
+}
+
+.catatan {
+  font-size: 13px;
+  color: #777;
+}
+
+.peta {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 6px;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+form button {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3b82f6;
+}
+
+footer {
+  padding: 24px 40px 8px;
+  background-color: #172554;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer h3 {
+  color: white;
+  margin-top: 0;
+}
+
+footer ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.hak-cipta {
+  margin-top: 16px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #3b4a7a;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav {
+    padding: 0 12px;
+  }
+
+  nav a {
+    padding: 10px 12px;
+  }
+
+  .hero {
+    padding: 48px 20px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .judul-halaman {
+    padding: 24px 20px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .sambutan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 16px 18px;
+  }
+
+  footer {
+    padding: 20px 20px 8px;
+  }
+}
