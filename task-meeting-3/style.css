@@ -6,7 +6,6 @@ body {
   background-color: #f5f7fa;
 }
 
-/* Header */
 header {
   display: flex;
   align-items: center;
@@ -31,7 +30,6 @@ header p {
   font-style: italic;
 }
 
-/* Navigasi */
 nav {
   background-color: #172554;
   padding: 0 40px;
@@ -49,7 +47,6 @@ nav a.aktif {
   background-color: #3b82f6;
 }
 
-/* Konten */
 main {
   max-width: 900px;
   margin: 24px auto;
@@ -67,7 +64,6 @@ h2 {
   color: #1e3a8a;
 }
 
-/* Tabel */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -90,7 +86,6 @@ th {
   color: #777;
 }
 
-/* Form */
 form label {
   display: block;
   margin-top: 12px;
@@ -121,7 +116,6 @@ form button:hover {
   background-color: #3b82f6;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 16px;
