@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita - SMAK Frateran Surabaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Logo SMAK Frateran Surabaya">
+    <div>
+      <h1>SMA Katolik Frateran Surabaya</h1>
+      <p>Hati Mengabdi, Prestasi Menginspirasi</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profil.html">Profil</a>
+    <a href="akademik.html">Akademik</a>
+    <a href="kesiswaan.html">Kesiswaan</a>
+    <a href="berita.html" class="aktif">Berita</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="spmb.html">SPMB</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <div class="judul-halaman">
+    <h2>Berita</h2>
+    <p>Kabar terbaru dari SMA Katolik Frateran Surabaya</p>
+  </div>
+
+  <main>
+    <section>
+      <h2>Cari Berita</h2>
+      <form class="cari" action="https://www.youtube.com/@SMAKFrateran/search" method="get" target="_blank">
+        <label for="query">Kata kunci</label>
+        <div>
+          <input type="search" id="query" name="query" placeholder="Contoh: graduation, live in, pramuka" required>
+          <button type="submit">Cari</button>
+        </div>
+      </form>
+      <p class="catatan">Pencarian dilakukan pada kanal YouTube resmi SMA Katolik Frateran Surabaya.</p>
+    </section>
+
+    <section id="berita">
+      <h2>Berita Terbaru</h2>
+      <input type="radio" name="kategori" id="kat-semua" class="pilihan" checked>
+      <input type="radio" name="kategori" id="kat-kegiatan" class="pilihan">
+      <input type="radio" name="kategori" id="kat-prestasi" class="pilihan">
+      <input type="radio" name="kategori" id="kat-akademik" class="pilihan">
+      <input type="radio" name="kategori" id="kat-fasilitas" class="pilihan">
+      <input type="radio" name="halaman" id="hal-1" class="pilihan" checked>
+      <input type="radio" name="halaman" id="hal-2" class="pilihan">
+      <div class="filter">
+        <label for="kat-semua">Semua</label>
+        <label for="kat-kegiatan">Kegiatan</label>
+        <label for="kat-prestasi">Prestasi</label>
+        <label for="kat-akademik">Akademik</label>
+        <label for="kat-fasilitas">Fasilitas</label>
+      </div>
+      <div class="daftar grid-3">
+        <article class="item berita kat-kegiatan hal-1">
+          <img src="images/berita/bali-tour-2026.jpg" alt="Aftermovie Bali Tour 2026">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Aftermovie Bali Tour 2026</h3>
+            <p class="tanggal">7 Juni 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Dokumentasi perjalanan siswa SMAK Frateran Surabaya ke Bali pada tahun 2026.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Aftermovie perjalanan siswa ke Bali diunggah pada kanal YouTube resmi sekolah sebagai kenangan kegiatan Bali Tour 2026.</p>
+              <p><a href="https://www.youtube.com/watch?v=EtUGYa07QZc" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-1">
+          <img src="images/berita/graduation-2026.jpg" alt="Our Greatest Show, Graduation SMAK Frateran 2026">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Our Greatest Show, Graduation SMAK Frateran 2026</h3>
+            <p class="tanggal">28 Mei 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Hari kelulusan siswa-siswi Class of 2026 dengan tema "Our Greatest Show".</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Hari kelulusan bukan sekadar perpisahan, tetapi awal dari babak baru untuk mengejar mimpi yang lebih besar. Sekolah menyampaikan terima kasih kepada guru, orang tua, sahabat, dan semua pihak yang telah mendukung perjalanan siswa. "Our Greatest Show" adalah kisah tentang persahabatan, perjuangan, mimpi, dan masa depan.</p>
+              <p><a href="https://www.youtube.com/watch?v=A97h2xdfJ8s" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-1">
+          <img src="images/berita/e-ktp-2026.jpg" alt="Perekaman E-KTP untuk Siswa Usia 16-17 Tahun">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Perekaman E-KTP untuk Siswa Usia 16-17 Tahun</h3>
+            <p class="tanggal">11 Maret 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Sekolah bekerja sama dengan Dispendukcapil Kota Surabaya mengadakan perekaman E-KTP.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Perekaman E-KTP diadakan setiap tahun bersama Dinas Kependudukan dan Catatan Sipil Kota Surabaya agar siswa lebih mudah memiliki KTP, termasuk siswa yang berasal dari luar kota maupun luar Pulau Jawa.</p>
+              <p><a href="https://www.youtube.com/watch?v=grXsFw0k1Ik" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-1">
+          <img src="images/berita/persiapan-live-in-2026.jpg" alt="Persiapan Outdoor Study dan Live In 2026">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Persiapan Outdoor Study dan Live In 2026</h3>
+            <p class="tanggal">21 Januari 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Kelas X mengikuti Outdoor Study dan kelas XI mengikuti Live In pada Februari 2026.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Menjelang bulan Februari 2026, siswa kelas X bersiap mengikuti Outdoor Study dan siswa kelas XI bersiap mengikuti Live In. Video ini menampilkan persiapan yang dilakukan sebelum kedua kegiatan tersebut.</p>
+              <p><a href="https://www.youtube.com/watch?v=6d6fM2XDXc0" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-prestasi hal-1">
+          <img src="images/berita/fave-glowtopia-2026.jpg" alt="FAVE Frateran Juara Glowtopia Dance Competition 2026">
+          <div class="berita-isi">
+            <span class="label">Prestasi</span>
+            <h3>FAVE Frateran Juara Glowtopia Dance Competition 2026</h3>
+            <p class="tanggal">19 Januari 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Tim dance FAVE Frateran meraih juara di ajang Glowtopia Dance Competition 2026.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Selamat kepada FAVE Frateran yang telah meraih juara di ajang Glowtopia Dance Competition 2026. Semoga prestasi ini menjadi langkah awal menuju mimpi yang lebih besar.</p>
+              <p><a href="https://www.youtube.com/watch?v=T0ohVuM2HHs" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-1">
+          <img src="images/berita/gita-swara-cls-2026.jpg" alt="Gita Swara Fraternity Choir Tampil di CLS Table Tennis Cup 2026">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Gita Swara Fraternity Choir Tampil di CLS Table Tennis Cup 2026</h3>
+            <p class="tanggal">18 Januari 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Paduan suara sekolah mengisi acara perlombaan olahraga tingkat Kota Surabaya.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Gita Swara Fraternity Choir, paduan suara SMAK Frateran Surabaya, mengisi acara CLS Table Tennis Cup 2026 dengan membawakan lagu "Cikala Le Pongpong" dan "We Will Rock You" sehingga penutupan kompetisi menjadi lebih meriah.</p>
+              <p><a href="https://www.youtube.com/watch?v=TyJSWZc8bOs" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-akademik hal-2">
+          <img src="images/berita/pelatihan-gemini-2026.jpg" alt="Pelatihan dan Sertifikasi Google Gemini untuk Guru dan Staf">
+          <div class="berita-isi">
+            <span class="label">Akademik</span>
+            <h3>Pelatihan dan Sertifikasi Google Gemini untuk Guru dan Staf</h3>
+            <p class="tanggal">18 Januari 2026 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Pengembangan kinerja guru dan staf melalui pelatihan dan sertifikasi Google Gemini.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>SMA Katolik Frateran Surabaya bekerja sama dengan program studi Manajemen Bisnis Digital ISTTS Surabaya mengadakan pelatihan dan sertifikasi Google Gemini bersama Ardalina Luvitasari Candra Gunawan, S.Ds., M.I.Kom. Kegiatan ini merupakan bagian dari workshop pengembangan kemampuan AI bagi guru dan staf sekolah.</p>
+              <p><a href="https://www.youtube.com/watch?v=B4vSuaJRfoU" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-fasilitas hal-2">
+          <img src="images/berita/laboratorium-2025.jpg" alt="Wajah Baru Laboratorium SMAK Frateran Surabaya">
+          <div class="berita-isi">
+            <span class="label">Fasilitas</span>
+            <h3>Wajah Baru Laboratorium SMAK Frateran Surabaya</h3>
+            <p class="tanggal">16 Oktober 2025 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Laboratorium Biologi, Fisika, dan Kimia kini tampil lebih cerah dengan tampilan baru.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Bapak Honggowidjojo, alumni SMA Katolik Frateran Surabaya angkatan 1970 serta Founder dan CEO Hakka Furniture, memperbarui tampilan Laboratorium Biologi, Fisika, dan Kimia agar lebih cerah dan menambah semangat belajar siswa. Keluarga besar sekolah menyampaikan terima kasih atas sumbangsih tersebut.</p>
+              <p><a href="https://www.youtube.com/watch?v=KrrTXOOcnMY" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-akademik hal-2">
+          <img src="images/berita/studi-banding-2025.jpg" alt="Studi Banding Guru dan Tenaga Kependidikan ke Jakarta dan Bandung">
+          <div class="berita-isi">
+            <span class="label">Akademik</span>
+            <h3>Studi Banding Guru dan Tenaga Kependidikan ke Jakarta dan Bandung</h3>
+            <p class="tanggal">6 Maret 2025 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Guru dan tenaga kependidikan melakukan studi banding ke beberapa sekolah di Jakarta dan Bandung.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Studi banding dilakukan untuk meningkatkan kualitas pendidikan dan manajemen sekolah. Kegiatan ini bertujuan memperluas wawasan, menggali inovasi, serta menerapkan praktik terbaik dalam dunia pendidikan agar sekolah terus berkembang dan memberikan pelayanan yang lebih baik bagi siswa.</p>
+              <p><a href="https://www.youtube.com/watch?v=y2hGcE_7cWw" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-2">
+          <img src="images/berita/hari-pahlawan-2024.jpg" alt="Upacara Bendera Hari Pahlawan Nasional 2024">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Upacara Bendera Hari Pahlawan Nasional 2024</h3>
+            <p class="tanggal">11 November 2024 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Upacara memperingati Hari Pahlawan bersama SMPK Angelus Custos.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Memperingati Hari Pahlawan Nasional 10 November 2024, SMA Katolik Frateran Surabaya mengadakan upacara bendera bersama SMPK Angelus Custos. Siswa dan guru mengenakan kostum pejuang dan kebaya untuk memeriahkan peringatan tersebut.</p>
+              <p><a href="https://www.youtube.com/watch?v=J9kMLQlqWMs" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-2">
+          <img src="images/berita/grand-camping-2024.jpg" alt="Fiat Lux, Frateran Grand Camping 2024">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Fiat Lux, Frateran Grand Camping 2024</h3>
+            <p class="tanggal">13 Oktober 2024 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Siswa bersiap mengikuti Grand Camping 2024 bertema Fiat Lux.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Setelah sosialisasi persiapan dan perlengkapan, siswa mengikuti Frateran Grand Camping 2024 bertema Fiat Lux yang berisi permainan dan pembelajaran untuk melatih siswa menghadapi berbagai rintangan.</p>
+              <p><a href="https://www.youtube.com/watch?v=wvy_bCe-AzM" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+        <article class="item berita kat-kegiatan hal-2">
+          <img src="images/berita/open-house-2024.jpg" alt="Open House dan Coaching Clinic 2024">
+          <div class="berita-isi">
+            <span class="label">Kegiatan</span>
+            <h3>Open House dan Coaching Clinic 2024</h3>
+            <p class="tanggal">1 Oktober 2024 &middot; Oleh SMAK Frateran Surabaya</p>
+            <p>Open house sekolah dengan coaching clinic basket dan futsal untuk siswa SMP.</p>
+            <details>
+              <summary>Baca selengkapnya</summary>
+              <p>Pada Open House 2024 sekolah mengadakan coaching clinic basket dan futsal bagi siswa SMP. Sekolah juga membuka kesempatan bagi SMP yang ingin mengundang pelatih basket atau futsal melalui nomor 0811 351 4902.</p>
+              <p><a href="https://www.youtube.com/watch?v=jhRGGx2SuoA" target="_blank">Tonton video di YouTube</a></p>
+            </details>
+          </div>
+        </article>
+      </div>
+      <div class="paginasi">
+        <label for="hal-1">1</label>
+        <label for="hal-2">2</label>
+      </div>
+      <p class="catatan">Sumber: kanal YouTube resmi <a href="https://www.youtube.com/@SMAKFrateran" target="_blank">SMA Katolik Frateran Surabaya</a>. Tanggal berita mengikuti tanggal unggah video.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="grid-3">
+      <div>
+        <h3>SMAK Frateran Surabaya</h3>
+        <p>Jl. Kepanjen No. 8, Surabaya<br>(031) 352 4901<br>smak@frateran.sch.id</p>
+      </div>
+      <div>
+        <h3>Halaman</h3>
+        <ul>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="akademik.html">Akademik</a></li>
+          <li><a href="kesiswaan.html">Kesiswaan</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="spmb.html">SPMB</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Media Sosial</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/smakfrateran" target="_blank">Instagram @smakfrateran</a></li>
+          <li><a href="https://www.youtube.com/@SMAKFrateran" target="_blank">YouTube SMA Katolik Frateran Surabaya</a></li>
+          <li><a href="https://frateran.sch.id/" target="_blank">Website resmi frateran.sch.id</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="hak-cipta">&copy; 2026 SMA Katolik Frateran Surabaya. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -22,8 +22,9 @@ Task meeting 4 melanjutkan website tersebut menjadi media digital yang lebih len
 
 - Menampilkan profil dan identitas sekolah.
 - Menyampaikan informasi akademik dan kelas khusus.
-- Menampilkan kegiatan dan prestasi siswa.
-- Menampilkan dokumentasi foto fasilitas dan kegiatan.
+- Menyampaikan informasi kesiswaan: OSIS, ekstrakurikuler, prestasi, dan kegiatan siswa.
+- Menampilkan berita dan kegiatan sekolah.
+- Menampilkan dokumentasi dalam bentuk galeri.
 - Menyediakan informasi SPMB (dahulu PPDB).
 - Menyediakan informasi kontak sekolah.
 - Memberikan pengalaman pengguna yang responsif pada desktop dan mobile.
@@ -32,11 +33,11 @@ Task meeting 4 melanjutkan website tersebut menjadi media digital yang lebih len
 
 **Pengunjung Umum:** Mencari informasi mengenai sekolah, fasilitas, dan kontak.
 
-**Calon Siswa:** Mencari informasi akademik, kegiatan, prestasi, dan SPMB.
+**Calon Siswa:** Mencari informasi akademik, ekstrakurikuler, kegiatan, prestasi, dan SPMB.
 
 **Orang Tua:** Mencari informasi program sekolah, jadwal dan biaya SPMB, serta kegiatan.
 
-**Siswa dan Alumni:** Melihat kegiatan, prestasi, dan informasi sekolah.
+**Siswa dan Alumni:** Melihat berita, kegiatan, prestasi, dan galeri sekolah.
 
 **Guru/Staff:** Tidak menjadi pengguna pengelola karena website bersifat statis tanpa sistem administrasi (lihat bagian 7).
 
@@ -49,6 +50,7 @@ Website Profil SMA Katolik Frateran Surabaya
 │   ├── Tentang Sekolah
 │   ├── Nilai FRATER
 │   ├── Prestasi Siswa
+│   ├── Berita Terbaru
 │   └── Lembaga Kerja Sama
 ├── Profil (profil.html)
 │   ├── Sambutan Kepala Sekolah
@@ -60,10 +62,16 @@ Website Profil SMA Katolik Frateran Surabaya
 │   ├── Kurikulum
 │   ├── Kelas Khusus (Natural Science dan Social Science)
 │   └── Fasilitas Sekolah
-├── Kegiatan (kegiatan.html)
-│   ├── Kegiatan Sekolah
-│   ├── Kegiatan Lainnya
-│   └── Prestasi Siswa
+├── Kesiswaan (kesiswaan.html)
+│   ├── OSIS
+│   ├── Ekstrakurikuler
+│   ├── Prestasi Siswa
+│   └── Kegiatan Siswa
+├── Berita (berita.html)
+│   ├── Cari Berita
+│   └── Berita Terbaru (filter kategori, pagination, detail)
+├── Galeri (galeri.html)
+│   └── Dokumentasi Sekolah (filter kategori, preview foto)
 ├── SPMB (spmb.html)
 │   ├── 3 Langkah Menjadi Fratorian
 │   ├── Jadwal Pendaftaran
@@ -76,7 +84,7 @@ Website Profil SMA Katolik Frateran Surabaya
     └── Lokasi
 ```
 
-Pada layout acuan, Kesiswaan, Berita, dan Galeri merupakan menu terpisah. Pada website ini isinya digabung: kegiatan siswa dan prestasi ada di halaman Kegiatan, sedangkan galeri foto ada di bagian Fasilitas Sekolah (Akademik) dan Kegiatan Sekolah. Menu PPDB diberi nama SPMB sesuai istilah yang dipakai sekolah.
+Menu PPDB pada layout acuan diberi nama SPMB sesuai istilah yang dipakai sekolah. Halaman Kegiatan pada versi sebelumnya digabung ke halaman Kesiswaan sebagai bagian Kegiatan Siswa.
 
 ## 6. Functional Requirements
 
@@ -86,7 +94,8 @@ Pada layout acuan, Kesiswaan, Berita, dan Galeri merupakan menu terpisah. Pada w
 - Hero section: nama sekolah, foto sekolah, tombol Profil Sekolah dan Info SPMB.
 - Tentang sekolah: tahun berdiri, akreditasi, kelas khusus.
 - Keunggulan sekolah: enam nilai FRATER.
-- Cuplikan prestasi siswa dengan tautan ke halaman Kegiatan.
+- Cuplikan prestasi siswa dengan tautan ke halaman Kesiswaan.
+- Berita terbaru (tiga berita) dengan tautan ke halaman Berita.
 - Lembaga kerja sama.
 - Footer berisi alamat singkat, tautan halaman, dan media sosial.
 
@@ -104,13 +113,27 @@ Pada layout acuan, Kesiswaan, Berita, dan Galeri merupakan menu terpisah. Pada w
 - Kelas Natural Science (MIPA) dan Kelas Social Science (IPS).
 - Fasilitas sekolah dalam bentuk galeri foto.
 
-### FR-04 — Kegiatan
+### FR-04 — Kesiswaan
 
-- Kegiatan sekolah: MPLS, Outdoor Study, Live In, Study Tour, Graduation, dilengkapi video YouTube resmi sekolah.
-- Kegiatan lainnya.
-- Prestasi siswa dengan foto.
+- OSIS: dokumentasi LDKS 2023 dan serah terima jabatan pengurus.
+- Ekstrakurikuler: Pramuka, Public Speaking, Paduan Suara, Dance, E-Sport, Basket dan Futsal.
+- Prestasi siswa dengan poster resmi.
+- Kegiatan siswa: MPLS, Outdoor Study, Live In, Study Tour, Graduation, dilengkapi video YouTube resmi sekolah.
 
-### FR-05 — SPMB
+### FR-05 — Berita
+
+- Kartu berita berisi judul, thumbnail, tanggal, kategori, ringkasan, dan penulis.
+- Detail berita dibuka dengan tombol "Baca selengkapnya" (elemen `details`) beserta tautan ke video sumber.
+- Filter kategori: Semua, Kegiatan, Prestasi, Akademik, Fasilitas.
+- Pagination dua halaman (enam berita per halaman).
+- Search: form pencarian yang diarahkan ke kanal YouTube resmi sekolah.
+
+### FR-06 — Galeri
+
+- Kategori: semua, kegiatan, prestasi, fasilitas, ekstrakurikuler, upacara, laboratorium.
+- Klik foto untuk melihat preview ukuran lebih besar.
+
+### FR-07 — SPMB
 
 - Alur pendaftaran tiga langkah: Pre-Registrasi, Tes Potensi Akademik, Pengumuman.
 - Jadwal pendaftaran per gelombang.
@@ -118,7 +141,7 @@ Pada layout acuan, Kesiswaan, Berita, dan Galeri merupakan menu terpisah. Pada w
 - Potongan dan beasiswa.
 - CTA: bagian Daftar Sekarang dengan tombol menuju situs SPMB resmi (spmb.frateran.sch.id).
 
-### FR-06 — Kontak
+### FR-08 — Kontak
 
 - Alamat, telepon, email, jam operasional, media sosial.
 - Google Maps lokasi sekolah.
@@ -141,12 +164,14 @@ Tidak diimplementasikan. Website ini statis (HTML dan CSS saja), sehingga isi ha
 - Gambar memakai format JPG/PNG yang umum didukung browser.
 - Satu file `style.css` untuk semua halaman.
 - Tanpa JavaScript dan tanpa framework sehingga halaman ringan.
+- Filter, pagination, dan preview galeri dibuat dengan CSS saja (radio button, `:checked`, dan `:target`).
 
 ### Accessibility
 
 - Kontras warna teks dengan latar (warna utama navy #1e3a8a).
 - Ukuran teks yang mudah dibaca.
 - Setiap gambar memiliki atribut `alt`.
+- Tombol filter dan pagination memakai `label` yang terhubung ke radio button.
 - Semua tautan dan form dapat diakses dengan keyboard.
 - Struktur heading berurutan (`h1`, `h2`, `h3`) dan tabel memiliki header `th`.
 
@@ -174,9 +199,9 @@ Tidak menggunakan database. Semua data ditulis langsung pada file HTML. Sumber d
 
 - Website resmi: https://frateran.sch.id/
 - Website SPMB: https://spmb.frateran.sch.id/
-- Kanal YouTube resmi: https://www.youtube.com/@SMAKFrateran
+- Kanal YouTube resmi: https://www.youtube.com/@SMAKFrateran (sumber berita, dokumentasi OSIS, ekstrakurikuler, dan sebagian foto galeri)
 
-Bagian yang datanya tidak tersedia di sumber resmi (misalnya jumlah siswa dan berita terbaru) tidak ditampilkan.
+Bagian yang datanya tidak tersedia di sumber resmi (misalnya jumlah siswa) tidak ditampilkan. Tanggal berita mengikuti tanggal unggah video di kanal YouTube resmi.
 
 ## 11. Prioritas Fitur
 
@@ -185,7 +210,9 @@ Bagian yang datanya tidak tersedia di sumber resmi (misalnya jumlah siswa dan be
 - Home
 - Profil
 - Akademik
-- Kegiatan
+- Kesiswaan
+- Berita
+- Galeri
 - SPMB
 - Kontak
 - Responsive Design
@@ -194,14 +221,12 @@ Bagian yang datanya tidak tersedia di sumber resmi (misalnya jumlah siswa dan be
 
 ### Pengembangan Berikutnya
 
-- Halaman Kesiswaan (OSIS dan ekstrakurikuler)
-- Halaman Berita dan Galeri terpisah
 - Admin Dashboard
 - Database
 - Login Admin
 - CMS Berita
 - CMS Galeri
-- Search
+- Search berita di dalam website sendiri
 - Form kontak yang benar-benar mengirim pesan
 - Statistik pengunjung
 
@@ -215,7 +240,9 @@ Pengunjung
     │
     ├── Profil
     ├── Akademik
-    ├── Kegiatan
+    ├── Kesiswaan
+    ├── Berita
+    ├── Galeri
     ├── SPMB
     └── Kontak
 ```
@@ -223,7 +250,7 @@ Pengunjung
 ### Contoh Flow Calon Siswa
 
 ```
-Home → Profil → Akademik (Kelas Khusus) → Kegiatan (Prestasi) → SPMB → Biaya → Daftar Sekarang
+Home → Profil → Akademik (Kelas Khusus) → Kesiswaan (Prestasi) → SPMB → Biaya → Daftar Sekarang
 ```
 
 ## 13. Struktur Project
@@ -234,14 +261,18 @@ task-meeting-4/
 ├── index.html
 ├── profil.html
 ├── akademik.html
-├── kegiatan.html
+├── kesiswaan.html
+├── berita.html
+├── galeri.html
 ├── spmb.html
 ├── kontak.html
 ├── style.css
 ├── PRD.md
 ├── README.md
 ├── images/
+│   ├── berita/
 │   ├── fasilitas/
+│   ├── galeri/
 │   └── prestasi/
 ├── wireframe/
 └── screenshots/
@@ -255,8 +286,9 @@ Semua halaman berada di satu folder agar tautan antarhalaman sederhana, dan tida
 - Navigasi berfungsi dan menandai halaman aktif.
 - Tampilan responsive pada lebar 375px (ponsel) dan 1280px (desktop).
 - Konten profil sekolah tersedia dan sesuai sumber resmi.
-- Kegiatan dan prestasi dapat ditampilkan.
-- Galeri foto fasilitas dapat ditampilkan.
+- Informasi kesiswaan (OSIS, ekstrakurikuler, prestasi, kegiatan) tersedia.
+- Berita dapat ditampilkan, difilter per kategori, dan dibuka detailnya.
+- Galeri dapat ditampilkan, difilter per kategori, dan dipreview dalam ukuran besar.
 - Informasi SPMB tersedia.
 - Form kontak dapat diisi dan divalidasi.
 - Footer tersedia pada seluruh halaman.
