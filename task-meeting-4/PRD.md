@@ -88,7 +88,7 @@ Menu PPDB pada layout acuan diberi nama SPMB sesuai istilah yang dipakai sekolah
 
 ## 6. Functional Requirements
 
-### FR-01 — Home
+### FR-01 - Home
 
 - Header dengan logo, nama sekolah, dan navigasi dengan penanda halaman aktif.
 - Hero section: nama sekolah, foto sekolah, tombol Profil Sekolah dan Info SPMB.
@@ -99,7 +99,7 @@ Menu PPDB pada layout acuan diberi nama SPMB sesuai istilah yang dipakai sekolah
 - Lembaga kerja sama.
 - Footer berisi alamat singkat, tautan halaman, dan media sosial.
 
-### FR-02 — Profil Sekolah
+### FR-02 - Profil Sekolah
 
 - Sambutan kepala sekolah.
 - Visi dan misi.
@@ -107,20 +107,20 @@ Menu PPDB pada layout acuan diberi nama SPMB sesuai istilah yang dipakai sekolah
 - Makna logo.
 - Sejarah singkat dalam bentuk tabel linimasa.
 
-### FR-03 — Akademik
+### FR-03 - Akademik
 
 - Kurikulum (Kurikulum Merdeka, Kurikulum 2013, pembelajaran paperless).
 - Kelas Natural Science (MIPA) dan Kelas Social Science (IPS).
 - Fasilitas sekolah dalam bentuk galeri foto.
 
-### FR-04 — Kesiswaan
+### FR-04 - Kesiswaan
 
 - OSIS: dokumentasi LDKS 2023 dan serah terima jabatan pengurus.
 - Ekstrakurikuler: Pramuka, Public Speaking, Paduan Suara, Dance, E-Sport, Basket dan Futsal.
 - Prestasi siswa dengan poster resmi.
 - Kegiatan siswa: MPLS, Outdoor Study, Live In, Study Tour, Graduation, dilengkapi video YouTube resmi sekolah.
 
-### FR-05 — Berita
+### FR-05 - Berita
 
 - Kartu berita berisi judul, thumbnail, tanggal, kategori, ringkasan, dan penulis.
 - Detail berita dibuka dengan tombol "Baca selengkapnya" (elemen `details`) beserta tautan ke video sumber.
@@ -128,12 +128,12 @@ Menu PPDB pada layout acuan diberi nama SPMB sesuai istilah yang dipakai sekolah
 - Pagination dua halaman (enam berita per halaman).
 - Search: form pencarian yang diarahkan ke kanal YouTube resmi sekolah.
 
-### FR-06 — Galeri
+### FR-06 - Galeri
 
 - Kategori: semua, kegiatan, prestasi, fasilitas, ekstrakurikuler, upacara, laboratorium.
 - Klik foto untuk melihat preview ukuran lebih besar.
 
-### FR-07 — SPMB
+### FR-07 - SPMB
 
 - Alur pendaftaran tiga langkah: Pre-Registrasi, Tes Potensi Akademik, Pengumuman.
 - Jadwal pendaftaran per gelombang.
@@ -141,7 +141,7 @@ Menu PPDB pada layout acuan diberi nama SPMB sesuai istilah yang dipakai sekolah
 - Potongan dan beasiswa.
 - CTA: bagian Daftar Sekarang dengan tombol menuju situs SPMB resmi (spmb.frateran.sch.id).
 
-### FR-08 — Kontak
+### FR-08 - Kontak
 
 - Alamat, telepon, email, jam operasional, media sosial.
 - Google Maps lokasi sekolah.
@@ -183,7 +183,7 @@ Tidak diimplementasikan. Website ini statis (HTML dan CSS saja), sehingga isi ha
 
 ## 9. Teknologi yang Digunakan
 
-### Level 1 — Static Website
+### Level 1 - Static Website
 
 ```
 HTML5 + CSS3 (Flexbox, CSS Grid, media query)
