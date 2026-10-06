@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Mahasiswa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-graduation-cap"></i>
+      Data Mahasiswa
+    </a>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="index.html" class="aktif">Mahasiswa</a>
+      <a href="#">Tentang</a>
+    </nav>
+    <span class="avatar"><i class="fa-regular fa-user"></i></span>
+  </header>
+
+  <main>
+
+    <section class="kartu">
+      <h2>Tambah Mahasiswa</h2>
+      <form>
+        <div class="baris">
+          <div class="field">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" placeholder="Contoh: 2405001">
+          </div>
+          <div class="field">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Nama sesuai KTM">
+          </div>
+        </div>
+        <div class="baris">
+          <div class="field">
+            <label for="jurusan">Jurusan</label>
+            <select id="jurusan">
+              <option value="">-- Pilih jurusan --</option>
+              <option>Informatika</option>
+              <option>Sistem Informasi</option>
+              <option>Teknik Komputer</option>
+              <option>Manajemen</option>
+              <option>Akuntansi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="angkatan">Angkatan</label>
+            <select id="angkatan">
+              <option value="">-- Pilih angkatan --</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="nama@kampus.ac.id">
+        </div>
+        <div class="tombol-grup">
+          <button type="button" class="tombol simpan"><i class="fa-solid fa-floppy-disk"></i> Simpan</button>
+          <button type="button" class="tombol batal">Batal</button>
+          <button type="reset" class="tombol reset"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="kartu">
+      <h2>Daftar Mahasiswa</h2>
+      <div class="cari">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Cari nama atau NIM...">
+      </div>
+      <div class="tabel-wadah">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>NIM</th>
+              <th>Nama</th>
+              <th>Jurusan</th>
+              <th>Angkatan</th>
+              <th>Email</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2405001</td>
+              <td>Dimas Prasetyo</td>
+              <td>Informatika</td>
+              <td>2024</td>
+              <td>dimas.prasetyo@kampus.ac.id</td>
+              <td>
+                <a href="#" class="ikon edit" title="Edit"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="ikon hapus" title="Hapus"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2405002</td>
+              <td>Putri Maharani</td>
+              <td>Sistem Informasi</td>
+              <td>2024</td>
+              <td>putri.maharani@kampus.ac.id</td>
+              <td>
+                <a href="#" class="ikon edit" title="Edit"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="ikon hapus" title="Hapus"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2305014</td>
+              <td>Yohanes Kurniawan</td>
+              <td>Teknik Komputer</td>
+              <td>2023</td>
+              <td>yohanes.k@kampus.ac.id</td>
+              <td>
+                <a href="#" class="ikon edit" title="Edit"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="ikon hapus" title="Hapus"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>2505021</td>
+              <td>Clarissa Wijaya</td>
+              <td>Akuntansi</td>
+              <td>2025</td>
+              <td>clarissa.wijaya@kampus.ac.id</td>
+              <td>
+                <a href="#" class="ikon edit" title="Edit"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="ikon hapus" title="Hapus"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>2305030</td>
+              <td>Fajar Nugroho</td>
+              <td>Manajemen</td>
+              <td>2023</td>
+              <td>fajar.nugroho@kampus.ac.id</td>
+              <td>
+                <a href="#" class="ikon edit" title="Edit"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="ikon hapus" title="Hapus"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="aktif">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&rsaquo;</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
