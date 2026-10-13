@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 4 - Dropdown Dinamis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <i class="fa-brands fa-js"></i>
+      Latihan JavaScript
+    </a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="latihan-1.html">Latihan 1</a>
+      <a href="latihan-2.html">Latihan 2</a>
+      <a href="latihan-3.html">Latihan 3</a>
+      <a href="latihan-4.html" class="aktif">Latihan 4</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="judul-halaman">
+      <h1>Dynamic Drop Down List dengan JavaScript</h1>
+      <p>Pilih jenis produk terlebih dahulu, daftar merk akan menyesuaikan dengan jenis produk yang dipilih.</p>
+    </div>
+
+    <section class="kartu">
+      <h2>Pilih Produk</h2>
+      <div class="baris">
+        <div class="field">
+          <label for="jenis">Jenis Produk</label>
+          <select id="jenis">
+            <option value="">Pilih Jenis Produk</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="merk">Merk</label>
+          <select id="merk" disabled>
+            <option value="">Pilih Merk</option>
+          </select>
+        </div>
+      </div>
+      <p id="pilihan" class="pilihan" hidden></p>
+    </section>
+
+  </main>
+
+  <script src="latihan-4.js"></script>
+</body>
+</html>

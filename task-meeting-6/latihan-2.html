@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 2 - Kode Pos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <i class="fa-brands fa-js"></i>
+      Latihan JavaScript
+    </a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="latihan-1.html">Latihan 1</a>
+      <a href="latihan-2.html" class="aktif">Latihan 2</a>
+      <a href="latihan-3.html">Latihan 3</a>
+      <a href="latihan-4.html">Latihan 4</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="judul-halaman">
+      <h1>Kode Pos Indonesia</h1>
+      <p>Cari kode pos dengan memilih wilayah dan memasukkan kata kunci pencarian di bawah ini.</p>
+    </div>
+
+    <section class="kartu">
+      <h2>Pencarian Kode Pos</h2>
+      <p class="catatan"><i class="fa-solid fa-circle-info"></i> Data yang tersedia saat ini hanya untuk Kota Surabaya, Jawa Timur.</p>
+      <form id="form-kodepos">
+        <div class="baris">
+          <div class="field">
+            <label for="provinsi">Provinsi</label>
+            <select id="provinsi">
+              <option>Jawa Timur</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="kota">Kota atau Kabupaten</label>
+            <select id="kota">
+              <option>Surabaya</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="kecamatan">Kecamatan</label>
+            <select id="kecamatan">
+              <option value="">Semua Kecamatan</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="kata-kunci">Masukkan Kata Kunci Pencarian</label>
+          <div class="cari">
+            <div class="cari-input">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" id="kata-kunci" placeholder="Nama kelurahan atau kode pos, contoh: 60111">
+            </div>
+            <button type="submit" class="tombol simpan">Cari</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="hasil" class="kartu" hidden>
+      <h2>Hasil Pencarian</h2>
+      <p id="hasil-info" class="hasil-info"></p>
+      <div id="hasil-grid" class="hasil-grid"></div>
+    </section>
+
+  </main>
+
+  <script src="latihan-2.js"></script>
+</body>
+</html>
