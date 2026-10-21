@@ -1,4 +1,4 @@
-# LibraryReg — Aplikasi Pendaftaran Anggota Perpustakaan
+# LibraryReg: Aplikasi Pendaftaran Anggota Perpustakaan
 
 Evaluasi [Studi Kasus - Perpustakaan](https://fajarbaskoro.blogspot.com/2026/10/studi-kasus-perpustakaan.html), dibuat dengan HTML, Bootstrap 5, Bootstrap Icons, dan JavaScript. Data disimpan di localStorage.
 
