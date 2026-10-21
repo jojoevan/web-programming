@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibraryReg - Perpustakaan Universitas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="logo"><i class="bi bi-book-half"></i></span>
+        <span class="ms-2 lh-1">
+          <span class="d-block fw-bold text-primary">LibraryReg</span>
+          <small class="text-muted">Perpustakaan Universitas</small>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Perpustakaan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="anggota.html">Daftar Anggota</a></li>
+          <li class="nav-item"><a class="nav-link" href="pendaftaran.html">Pendaftaran Anggota</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-outline-primary btn-sm" href="login.html"><i class="bi bi-person-lock"></i> Login Petugas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="badge bg-white text-primary mb-3">Pendaftaran Anggota Online</span>
+          <h1 class="display-5 fw-bold">Selamat Datang di Perpustakaan Universitas</h1>
+          <p class="lead my-4">Daftar menjadi anggota perpustakaan secara online, tanpa antre dan tanpa formulir kertas. Cukup isi data diri, dan kartu anggota siap diambil di meja layanan.</p>
+          <a href="pendaftaran.html" class="btn btn-light btn-lg text-primary fw-semibold me-2 mb-2"><i class="bi bi-pencil-square"></i> Daftar Sekarang</a>
+          <a href="#layanan" class="btn btn-outline-light btn-lg mb-2">Lihat Layanan</a>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="hero-gambar">
+            <i class="bi bi-book"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tentang -->
+  <section id="tentang">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="judul-kecil">Tentang Kami</p>
+          <h2 class="fw-bold mb-3">Tentang Perpustakaan</h2>
+          <p>Perpustakaan Universitas adalah pusat informasi dan tempat belajar bagi seluruh sivitas akademika. Perpustakaan melayani mahasiswa, dosen, dan tenaga kependidikan dengan koleksi cetak maupun digital.</p>
+          <p>Melalui <strong>LibraryReg</strong>, proses pendaftaran anggota yang sebelumnya memakai formulir kertas kini bisa dilakukan secara online sehingga lebih cepat dan datanya lebih rapi.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="kotak-info">
+                <i class="bi bi-bullseye"></i>
+                <h6 class="fw-bold mt-2">Visi</h6>
+                <p class="small mb-0">Menjadi perpustakaan modern yang mendukung pembelajaran dan penelitian.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="kotak-info">
+                <i class="bi bi-flag"></i>
+                <h6 class="fw-bold mt-2">Misi</h6>
+                <p class="small mb-0">Menyediakan koleksi lengkap dan layanan yang mudah diakses.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="kotak-info">
+                <i class="bi bi-calendar-check"></i>
+                <h6 class="fw-bold mt-2">Berdiri Sejak</h6>
+                <p class="small mb-0">Tahun 1985 dan terus berkembang.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="kotak-info">
+                <i class="bi bi-people"></i>
+                <h6 class="fw-bold mt-2">Untuk Semua</h6>
+                <p class="small mb-0">Mahasiswa, dosen, dan tenaga kependidikan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="judul-kecil">Layanan</p>
+        <h2 class="fw-bold">Layanan Perpustakaan</h2>
+        <p class="text-muted">Berbagai layanan yang bisa dinikmati setelah menjadi anggota.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card kartu h-100">
+            <div class="ikon"><i class="bi bi-journal-bookmark"></i></div>
+            <h5>Peminjaman Buku</h5>
+            <p class="text-muted mb-0">Pinjam hingga 5 buku selama 14 hari dan bisa diperpanjang.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card kartu h-100">
+            <div class="ikon"><i class="bi bi-tablet"></i></div>
+            <h5>E-Book dan Jurnal</h5>
+            <p class="text-muted mb-0">Akses koleksi digital dan jurnal ilmiah dari mana saja.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card kartu h-100">
+            <div class="ikon"><i class="bi bi-search"></i></div>
+            <h5>Katalog Online</h5>
+            <p class="text-muted mb-0">Cari ketersediaan buku sebelum datang ke perpustakaan.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card kartu h-100">
+            <div class="ikon"><i class="bi bi-chat-dots"></i></div>
+            <h5>Konsultasi Referensi</h5>
+            <p class="text-muted mb-0">Bantuan pustakawan untuk mencari referensi tugas akhir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan dan Fasilitas -->
+  <section>
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="judul-kecil">Keunggulan</p>
+        <h2 class="fw-bold">Keunggulan dan Fasilitas</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="fasilitas">
+            <i class="bi bi-collection"></i>
+            <div>
+              <h5>Koleksi Lengkap</h5>
+              <p class="text-muted mb-0">Buku cetak, e-book, skripsi, dan jurnal dari berbagai bidang ilmu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="fasilitas">
+            <i class="bi bi-lamp"></i>
+            <div>
+              <h5>Ruang Baca Nyaman</h5>
+              <p class="text-muted mb-0">Ruang baca ber-AC, ruang diskusi kelompok, dan area tenang.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="fasilitas">
+            <i class="bi bi-wifi"></i>
+            <div>
+              <h5>Komputer dan Wi-Fi Gratis</h5>
+              <p class="text-muted mb-0">Komputer untuk mencari referensi dan internet cepat untuk anggota.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="fasilitas">
+            <i class="bi bi-lightning-charge"></i>
+            <div>
+              <h5>Pendaftaran Cepat</h5>
+              <p class="text-muted mb-0">Daftar online kurang dari 5 menit, tanpa antre di loket.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistik (angka ilustrasi) -->
+  <section class="statistik text-center">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-book fs-1"></i>
+          <h2 class="fw-bold mt-2">50.000+</h2>
+          <p class="mb-0">Koleksi Buku</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-file-earmark-text fs-1"></i>
+          <h2 class="fw-bold mt-2">1.200+</h2>
+          <p class="mb-0">Jurnal Digital</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-people fs-1"></i>
+          <h2 class="fw-bold mt-2">10.000+</h2>
+          <p class="mb-0">Anggota</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-person-check fs-1"></i>
+          <h2 class="fw-bold mt-2" id="jumlah-online">0</h2>
+          <p class="mb-0">Daftar Online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ajakan daftar -->
+  <section class="bg-white text-center">
+    <div class="container">
+      <h3 class="fw-bold">Belum menjadi anggota?</h3>
+      <p class="text-muted">Daftar sekarang dan nikmati semua layanan perpustakaan.</p>
+      <a href="pendaftaran.html" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold"><i class="bi bi-book-half"></i> LibraryReg</h5>
+          <p class="small">Aplikasi pendaftaran anggota Perpustakaan Universitas.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Kontak</h5>
+          <p class="small">
+            <i class="bi bi-geo-alt"></i> Gedung Perpustakaan, Kampus Universitas<br>
+            <i class="bi bi-telephone"></i> (031) 123-4567<br>
+            <i class="bi bi-envelope"></i> perpustakaan@univ.ac.id
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Jam Layanan</h5>
+          <p class="small">
+            Senin - Jumat: 08.00 - 20.00<br>
+            Sabtu: 08.00 - 14.00<br>
+            Minggu dan hari libur: Tutup
+          </p>
+        </div>
+      </div>
+      <hr>
+      <p class="small text-center mb-0">&copy; 2026 Perpustakaan Universitas - LibraryReg</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Jumlah anggota yang sudah daftar lewat website ini
+    document.getElementById("jumlah-online").textContent = ambilData().length;
+  </script>
+</body>
+</html>
