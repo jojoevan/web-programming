@@ -1,0 +1,12 @@
+{
+  "name": "latihan-mongodb",
+  "version": "1.0.0",
+  "description": "Latihan NoSQL: menyimpan data pengguna dengan MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  }
+}
