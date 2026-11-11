@@ -10,6 +10,6 @@ Kumpulan tugas mata kuliah Web Programming.
 | [task-meeting-5](task-meeting-5/) | Data Mahasiswa | https://jojoevan.github.io/web-programming/task-meeting-5/ |
 | [task-meeting-6](task-meeting-6/) | Latihan JavaScript | https://jojoevan.github.io/web-programming/task-meeting-6/ |
 | [task-meeting-7](task-meeting-7/) | Latihan Bootstrap | https://jojoevan.github.io/web-programming/task-meeting-7/ |
+| [evaluasi-studi-kasus-perpustakaan](evaluasi-studi-kasus-perpustakaan/) | Evaluasi: LibraryReg (Pendaftaran Anggota Perpustakaan) | https://jojoevan.github.io/web-programming/evaluasi-studi-kasus-perpustakaan/ |
 | [task-meeting-9](task-meeting-9/) | Pendaftaran Siswa Baru (PHP & MySQL) | - (jalankan di XAMPP) |
 | [task-meeting-10](task-meeting-10/) | Latihan Database (RDBMS, MongoDB, Spesifikasi Proyek) | - (jalankan di komputer lokal) |
-| [evaluasi-studi-kasus-perpustakaan](evaluasi-studi-kasus-perpustakaan/) | Evaluasi: LibraryReg (Pendaftaran Anggota Perpustakaan) | https://jojoevan.github.io/web-programming/evaluasi-studi-kasus-perpustakaan/ |
