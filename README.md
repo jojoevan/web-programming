@@ -13,3 +13,4 @@ Kumpulan tugas mata kuliah Web Programming.
 | [evaluasi-studi-kasus-perpustakaan](evaluasi-studi-kasus-perpustakaan/) | Evaluasi: LibraryReg (Pendaftaran Anggota Perpustakaan) | https://jojoevan.github.io/web-programming/evaluasi-studi-kasus-perpustakaan/ |
 | [task-meeting-9](task-meeting-9/) | Pendaftaran Siswa Baru (PHP & MySQL) | - (jalankan di XAMPP) |
 | [task-meeting-10](task-meeting-10/) | Latihan Database (RDBMS, MongoDB, Spesifikasi Proyek) | - (jalankan di komputer lokal) |
+| [task-meeting-11](task-meeting-11/) | PPDB Online SMK Nusantara (MVP PHP & MySQL) | - (jalankan di XAMPP) |
