@@ -14,3 +14,4 @@ Kumpulan tugas mata kuliah Web Programming.
 | [task-meeting-9](task-meeting-9/) | Pendaftaran Siswa Baru (PHP & MySQL) | - (jalankan di XAMPP) |
 | [task-meeting-10](task-meeting-10/) | Latihan Database (RDBMS, MongoDB, Spesifikasi Proyek) | - (jalankan di komputer lokal) |
 | [task-meeting-11](task-meeting-11/) | PPDB Online SMK Nusantara (MVP PHP & MySQL) | - (jalankan di XAMPP) |
+| [task-meeting-12](task-meeting-12/) | PPDB Online SMK Nusantara: Upload Pas Foto (PHP & MySQL) | - (jalankan di XAMPP) |
